@@ -59,7 +59,13 @@ export default function DeathCounter(props) {
 							<Cell>{player.name}</Cell>
 	                        <Cell>{player.player}</Cell>
 	                        <Cell>{player.race}</Cell>
-	                        <Cell>{player.spec}</Cell>
+	                        <Cell>
+	                        	<ul>
+	                        		{ player.spec.map((spec, index) => (
+	                        			<li key={`player-spec-${index}`}> {spec} </li>
+	                        		))}
+	                        	</ul>
+	                        </Cell>
 							<Cell>{player.deaths}</Cell>
 						</tr>
 					))}
