@@ -1,0 +1,26 @@
+{   
+    "players": [{
+        "player": "Andrew",   
+        "name": "fane",   
+        "race": "Undead Human",
+        "deaths": 0
+    },
+    {
+        "player": "Euan",   
+        "name": "fane",   
+        "race": "Undead Human",
+        "deaths": 0
+    },
+    {
+        "player": "Keith",   
+        "name": "fane",   
+        "race": "Undead Human",
+        "deaths": 0
+    },
+    {
+        "player": "Kenny",   
+        "name": "fane",   
+        "race": "Undead Human",
+        "deaths": 0
+    }]
+}

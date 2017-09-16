@@ -1,12 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
-import * as playerInfo from './data/players.json';
+import * as data from './data/data.json';
 
 const DeathTable = styled.table`
 	border-collapse: collapse;
-	padding: 5px 0;
-	margin-top: 30px;
-	width: 100%;
+    margin-top: 30px;
+    width: 100%;
 `;
 
 const Header = styled.th`
@@ -21,14 +20,6 @@ const Cell = styled.td`
 	padding: 5px 10px;
 `;
 
-function generateData(data) {
-    let rows = [];
-
-    for (let player in data) {
-        rows.push(data[player])
-    }
-} 
-
 const sortPlayers = players => {
     return players.sort((a, b) => {
         if (a.deaths.pve < b.deaths.pve) return 1;
@@ -37,32 +28,32 @@ const sortPlayers = players => {
         else if (a.deaths.pvp > b.deaths.pvp) return -1;
         else return 0;
     });
-};
+};  
 
-const players = generateData(playerInfo);
-const sortedPlayers = sortPlayers(players);
-
-console.log(sortedPlayers);
+const sortedPlayers = sortPlayers(data.players);
 
 export default function DeathCounter(props) {
 	return (
 		<DeathTable>
-			{/* <tbody>
+			<tbody>
 				<tr>
-					<Header>Player</Header>
-					<Header>PvP</Header>
-					<Header>PvE</Header>
+                    <Header>#</Header>
+                    <Header>Name</Header>
+                    <Header>Player</Header>
+                    <Header>Race</Header>
+					<Header>☠️</Header>
 				</tr>
 
-				{sortedPlayers.map((team, index) => (
+				{sortedPlayers.map((player, index) => (
 					<tr key={`death-row-${index}`}>
 						<Cell>{++index}</Cell>
-						<Cell>{team.deaths.pvp}</Cell>
-						<Cell>{team.played}</Cell>
-						<Cell secondaryStats>{team.win}</Cell>
+						<Cell>{player.name}</Cell>
+                        <Cell>{player.player}</Cell>
+                        <Cell>{player.race}</Cell>
+						<Cell>{player.deaths}</Cell>
 					</tr>
 				))}
-			</tbody> */}
+			</tbody>
 		</DeathTable>
 	);
 }
