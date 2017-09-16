@@ -1,20 +1,26 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import styled from 'styled-components';
+import DeathCounter from './DeathCounter';
+
+const View = styled.div`
+  height: 100vh;
+  width: 100vw;
+`;
+
+const Container = styled.div`
+  width: 100%;
+`;
+
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
+      <View>
+        <Container>
           <h2>Divinity: Original Sin 2</h2>
-          <h3> Death Counter </h3>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+          <DeathCounter/>
+        </Container>
+      </View>
     );
   }
 }

@@ -1,0 +1,26 @@
+{
+    "andrew": {
+        "deaths": {
+            "pvp": 0,
+            "pve": 0
+        }
+    },
+    "euan": {
+        "deaths": {
+            "pvp": 0,
+            "pve": 0
+        }
+    },
+    "kenny": {
+        "deaths": {
+            "pvp": 0,
+            "pve": 0
+        }
+    },
+    "keith": {
+        "deaths": {
+            "pvp": 0,
+            "pve": 0
+        }
+    }
+}
