@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import DeathCounter from './DeathCounter';
 import StreamChat from './StreamChat';
 import heroImg from './img/hero.jpg';
+import titleImg from './img/title.png';
 
 const Container = styled.main`
   max-width: 1440px;
@@ -10,6 +11,7 @@ const Container = styled.main`
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
+  padding: 25px 0;
 `;
 
 const Hero = styled.div`
@@ -21,8 +23,15 @@ const Hero = styled.div`
   background-position: center; 
 `;
 
-const Main = styled.section`
+const Section = styled.section`
   flex: 0 1 75%;
+  background-color: rgba(0, 0, 0, .9);
+  display: flex;
+  flex-direction: column;
+`;
+
+const Banner = styled.img`
+  width: 100%;
 `;
 
 const Sidebar = styled.aside`
@@ -36,10 +45,10 @@ class App extends Component {
   render() {
     return (
       <Container>
-        <Main>
+        <Section>
           <Hero/>
           <DeathCounter/>
-        </Main>
+        </Section>
         <Sidebar> 
           <StreamChat/>
         </Sidebar>
