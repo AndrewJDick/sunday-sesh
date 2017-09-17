@@ -1,5 +1,6 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+import { media } from './styles/breakpoints';
 import * as data from './data/data.json';
 
 const Section = styled.section `
@@ -7,11 +8,11 @@ const Section = styled.section `
 `;
 
 const DeathTable = styled.table`
-	background-color: rgba(255, 255, 255, .8);
+	background-color: rgba(255, 255, 255, .9);
 	border-collapse: collapse;
     width: 100%;
     height: 100%;
-`;
+`; 	
 
 const Header = styled.th`
 	background-color: rgba(0, 0, 0, 0.1);
@@ -19,14 +20,35 @@ const Header = styled.th`
 	font-weight: bold;
 	height: 50px;
 	vertical-align: middle;
+
+	${props => props.hideMobile && css`
+		display: none;
+		
+		${media.tablet`
+			display: table-cell;	
+		`};
+	`};
 `;
 
 const Cell = styled.td`
 	text-align: center;
 	font-size: 1.25rem;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-	padding: 5 10px;
+	padding: 20px;
 	vertical-align: middle;
+
+	${media.tablet`
+		padding: 0;
+		display: table-cell;
+	`};
+
+	${props => props.hideMobile && css`
+		display: none;
+		
+		${media.tablet`
+			display: table-cell;
+		`};
+	`};
 `;
 
 const sortPlayers = players => {
@@ -47,19 +69,19 @@ export default function DeathCounter(props) {
 			<DeathTable>
 				<tbody>
 					<tr>
-	                    <Header>Name</Header>
-	                    <Header>Player</Header>
-	                    <Header>Race</Header>
-	                    <Header>Specialization</Header>
+						<Header>Player</Header>
+	                    <Header hideMobile>Name</Header>
+	                    <Header hideMobile>Race</Header>
+	                    <Header hideMobile>Specialization</Header>
 						<Header>☠️</Header>
 					</tr>
 
 					{sortedPlayers.map((player, index) => (
 						<tr key={`death-row-${index}`}>
-							<Cell>{player.name}</Cell>
-	                        <Cell>{player.player}</Cell>
-	                        <Cell>{player.race}</Cell>
-	                        <Cell>
+							<Cell>{player.player}</Cell>
+							<Cell hideMobile>{player.name}</Cell>
+	                        <Cell hideMobile>{player.race}</Cell>
+	                        <Cell hideMobile>
 	                        	<ul>
 	                        		{ player.spec.map((spec, index) => (
 	                        			<li key={`player-spec-${index}`}> {spec} </li>

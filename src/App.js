@@ -1,33 +1,43 @@
 import React, { Component } from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+import { media } from './styles/breakpoints';
+import Header from './Header';
 import DeathCounter from './DeathCounter';
 import StreamChat from './StreamChat';
 import heroImg from './img/hero.jpg';
-import titleImg from './img/title.png';
 
-const Container = styled.main`
+const Container = styled.div`
   max-width: 1440px;
   height: 100%;
   margin: 0 auto;
   display: flex;
-  flex-wrap: wrap;
-  padding: 25px 0;
+  flex-direction: column;
+  padding 0;
+
+  ${media.tablet`
+      padding: 25px 0;
+  `};
 `;
 
-const Hero = styled.div`
-  height: 400px;
+const Main = styled.main`
+  flex: 1 1 100%;
+  display: flex;
+  flex-wrap: wrap;
+`;
+
+const Hero = styled.img`
   width: 100%;
-  background-image: url(${heroImg});
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center; 
 `;
 
 const Section = styled.section`
-  flex: 0 1 75%;
+  flex: 1 1 100%;
   background-color: rgba(0, 0, 0, .9);
   display: flex;
   flex-direction: column;
+
+  ${media.desktop`
+      flex: 1;
+  `};
 `;
 
 const Banner = styled.img`
@@ -36,8 +46,13 @@ const Banner = styled.img`
 
 const Sidebar = styled.aside`
   background-color: rgba(0,0,0,.2);
-  height: 100%;
-  flex: 0 1 25%;
+  height: auto;
+  flex: 1 1 100%;
+
+  ${media.desktop`
+      flex: 0 1 auto;
+      height: 100%;
+  `};
 `;
 
 
@@ -45,13 +60,16 @@ class App extends Component {
   render() {
     return (
       <Container>
-        <Section>
-          <Hero/>
-          <DeathCounter/>
-        </Section>
-        <Sidebar> 
-          <StreamChat/>
-        </Sidebar>
+        <Header/>
+        <Main>
+          <Section>
+            <Hero src={heroImg}/>
+            <DeathCounter/>
+          </Section>
+          <Sidebar> 
+            <StreamChat/>
+          </Sidebar>
+        </Main>
       </Container>
     );
   }

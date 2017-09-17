@@ -3,7 +3,8 @@ import styled from 'styled-components';
 
 const ChatBox = styled.iframe`
     width: 100%;
-    background-color: rgba(255, 255, 255, .8);
+    background-color: rgba(255, 255, 255, .9);
+    min-height: 300px;
 `;
 
 export default function StreamChat(props) {
