@@ -53,10 +53,8 @@ const Cell = styled.td`
 
 const sortPlayers = players => {
     return players.sort((a, b) => {
-        if (a.deaths.pve < b.deaths.pve) return 1;
-        else if (a.deaths.pve > b.deaths.pve) return -1;
-        else if (a.deaths.pvp < b.deaths.pvp) return 1;
-        else if (a.deaths.pvp > b.deaths.pvp) return -1;
+        if (a.deaths < b.deaths) return 1;
+        else if (a.deaths > b.deaths) return -1;
         else return 0;
     });
 };  
