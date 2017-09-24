@@ -34,7 +34,7 @@ body {
 	background-image: url(../img/background.jpg);
   	background-repeat: no-repeat;
   	background-size: cover;
-  	background-position: center; 
+  	background-position: center;
 }
 ol, ul {
 	list-style: none;
@@ -57,8 +57,15 @@ html, body, #root {
 
 #root {
 	background-color: rgba(0, 0, 0, .6);
+	padding-bottom: 15px;
 }
 
 * {
 	box-sizing: border-box;
+}
+
+@media screen and (max-width: 660px) {
+	body {
+		background-image: none;
+	}
 }

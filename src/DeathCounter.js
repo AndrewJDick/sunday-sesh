@@ -12,7 +12,7 @@ const DeathTable = styled.table`
 	border-collapse: collapse;
     width: 100%;
     height: 100%;
-`; 	
+`;	
 
 const Header = styled.th`
 	background-color: rgba(0, 0, 0, 0.1);
@@ -32,13 +32,13 @@ const Header = styled.th`
 
 const Cell = styled.td`
 	text-align: center;
-	font-size: 1.25rem;
+	font-size: 1rem;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-	padding: 20px;
+	padding: 10px 20px;
 	vertical-align: middle;
 
 	${media.tablet`
-		padding: 0;
+		padding: 10px;
 		display: table-cell;
 	`};
 
@@ -68,7 +68,7 @@ export default function DeathCounter(props) {
 				<tbody>
 					<tr>
 						<Header>Player</Header>
-	                    <Header hideMobile>Name</Header>
+	                    <Header>Name</Header>
 	                    <Header hideMobile>Race</Header>
 	                    <Header hideMobile>Specialization</Header>
 						<Header>☠️</Header>
@@ -77,7 +77,7 @@ export default function DeathCounter(props) {
 					{sortedPlayers.map((player, index) => (
 						<tr key={`death-row-${index}`}>
 							<Cell>{player.player}</Cell>
-							<Cell hideMobile>{player.name}</Cell>
+							<Cell>{player.name}</Cell>
 	                        <Cell hideMobile>{player.race}</Cell>
 	                        <Cell hideMobile>
 	                        	<ul>

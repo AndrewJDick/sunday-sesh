@@ -13,10 +13,6 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   padding 0;
-
-  ${media.tablet`
-      padding: 25px 0;
-  `};
 `;
 
 const Main = styled.main`

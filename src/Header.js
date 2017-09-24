@@ -9,6 +9,7 @@ const Header = styled.header`
   justify-content: space-between;
   flex: 0 1 auto;
   box-sizing: border-box;
+  margin-top: 15px;
   
   ${media.tablet`
       display: flex;
