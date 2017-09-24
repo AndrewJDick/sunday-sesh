@@ -7,7 +7,7 @@ import StreamChat from './StreamChat';
 import heroImg from './img/hero.jpg';
 
 const Container = styled.div`
-  max-width: 1440px;
+  max-width: 1080px;
   height: 100%;
   margin: 0 auto;
   display: flex;
