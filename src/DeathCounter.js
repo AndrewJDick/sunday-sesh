@@ -5,6 +5,11 @@ import * as data from './data/data.json';
 
 const Section = styled.section `
 	flex: 1;
+	margin-top: 10px;
+	
+	${media.tablet`
+      margin-bottom: 0;
+  	`};
 `;
 
 const DeathTable = styled.table`

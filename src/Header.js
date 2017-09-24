@@ -9,17 +9,11 @@ const Header = styled.header`
   justify-content: space-between;
   flex: 0 1 auto;
   box-sizing: border-box;
-  margin-top: 15px;
   
   ${media.tablet`
       display: flex;
       height: 75px;
-      padding: 15px;
-  `};
-
-  ${media.desktop`
-      height: 100px;
-      padding: 0 15px 15px;
+      padding: 10px 15px 0;
   `};
 `;
 

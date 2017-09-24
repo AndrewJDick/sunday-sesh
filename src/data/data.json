@@ -3,15 +3,15 @@
         "player": "Andrew",   
         "name": "Fane",   
         "race": "Undead Human",
-        "spec": ["Necromancer 2", "Summoner 1", "Geomancer 1"],
-        "deaths": 2
+        "spec": ["Necromancer 2", "Summoner 1", "Geomancer 1", "Hydrosophist 1"],
+        "deaths": 3
     },
     {
         "player": "Euan",   
         "name": "The Red Prince",   
         "race": "Lizard",
-        "spec": ["Two-Handed 2", "Polymorph 2"],
-        "deaths": 2
+        "spec": ["Two-Handed 2", "Polymorph 2", "Warfare 1" ],
+        "deaths": 3
     },
     {
         "player": "Keith",   
@@ -24,7 +24,7 @@
         "player": "Kenny",   
         "name": "Tilda Blustertongue",   
         "race": "Undead Lizard",
-        "spec": ["Summoner 4"],
+        "spec": ["Summoner 4", "Aerotheurge 1"],
         "deaths": 1
     }]
 }

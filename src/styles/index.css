@@ -51,13 +51,24 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-html, body, #root {
-	height: 100%;
+
+html {
+	min-height: 100%;
+	display: flex;
+}
+
+body, #root {
+	background-color: #000;
+}
+
+body {
+	display: flex;
+	flex: 1;
 }
 
 #root {
 	background-color: rgba(0, 0, 0, .6);
-	padding-bottom: 15px;
+	flex: 1;
 }
 
 * {

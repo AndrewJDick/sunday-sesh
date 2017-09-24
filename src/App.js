@@ -19,6 +19,8 @@ const Main = styled.main`
   flex: 1 1 100%;
   display: flex;
   flex-wrap: wrap;
+  margin: 10px 0;
+  padding: 10px;
 `;
 
 const Hero = styled.img`
@@ -27,17 +29,15 @@ const Hero = styled.img`
 
 const Section = styled.section`
   flex: 1 1 100%;
-  background-color: rgba(0, 0, 0, .9);
   display: flex;
   flex-direction: column;
+  margin-bottom: 10px;
+
 
   ${media.desktop`
       flex: 1;
+      margin-bottom: 0;
   `};
-`;
-
-const Banner = styled.img`
-  width: 100%;
 `;
 
 const Sidebar = styled.aside`
@@ -48,6 +48,7 @@ const Sidebar = styled.aside`
   ${media.desktop`
       flex: 0 1 auto;
       height: 100%;
+      margin-left: 10px;
   `};
 `;
 
