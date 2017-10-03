@@ -3,28 +3,28 @@
         "player": "Andrew",   
         "name": "Fane",   
         "race": "Undead Human",
-        "spec": ["Necromancer 2", "Summoner 1", "Geomancer 1", "Hydrosophist 1"],
+        "spec": ["Necro 2", "Summon 1", "Geo 1", "Hydro 1", "Pyro 1"],
         "deaths": 3
     },
     {
         "player": "Euan",   
         "name": "The Red Prince",   
         "race": "Lizard",
-        "spec": ["Two-Handed 2", "Polymorph 2", "Warfare 1" ],
+        "spec": ["Two-Handed 2", "Polymorph 2", "Warfare 1", "Perseverance 1" ],
         "deaths": 3
     },
     {
         "player": "Keith",   
         "name": "Killary Hinton",   
         "race": "Lizard",
-        "spec": ["Scoundrel 2", "Dual-weild 1", "Polymorph 1"],
-        "deaths": 2
+        "spec": ["Scoundrel 2", "Dual-wield 3", "Polymorph 1"],
+        "deaths": 3
     },
     {
         "player": "Kenny",   
         "name": "Tilda Blustertongue",   
         "race": "Undead Lizard",
-        "spec": ["Summoner 4", "Aerotheurge 1"],
+        "spec": ["Summon 5", "Aero 1"],
         "deaths": 1
     }]
 }
