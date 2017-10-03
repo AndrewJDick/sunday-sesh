@@ -3,7 +3,7 @@
         "player": "Andrew",   
         "name": "Fane",   
         "race": "Undead Human",
-        "spec": ["Necro 2", "Summon 1", "Geo 1", "Hydro 1", "Pyro 1"],
+        "spec": ["Necromancer 2", "Summoner 1", "Geomancer 1", "Hydrosophist 1", "Pyrokinetic 1"],
         "deaths": 3
     },
     {
@@ -24,7 +24,7 @@
         "player": "Kenny",   
         "name": "Tilda Blustertongue",   
         "race": "Undead Lizard",
-        "spec": ["Summon 5", "Aero 1"],
+        "spec": ["Summoner 5", "Aerotheurge 1"],
         "deaths": 1
     }]
 }
