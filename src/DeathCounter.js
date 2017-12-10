@@ -75,7 +75,7 @@ export default function DeathCounter(props) {
 						<Header>Player</Header>
 	                    <Header>Name</Header>
 	                    <Header hideMobile>Race</Header>
-	                    <Header hideMobile>Specialization</Header>
+	                    <Header hideMobile>Role</Header>
 						<Header>☠️</Header>
 					</tr>
 
