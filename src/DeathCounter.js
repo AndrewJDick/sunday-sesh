@@ -39,11 +39,9 @@ const Cell = styled.td`
 	text-align: center;
 	font-size: 1rem;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-	padding: 10px 20px;
 	vertical-align: middle;
 
 	${media.tablet`
-		padding: 10px;
 		display: table-cell;
 	`};
 
