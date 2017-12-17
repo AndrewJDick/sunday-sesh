@@ -4,27 +4,27 @@
         "name": "Fane",   
         "race": "Undead Human",
         "spec": ["Summoner"],
-        "deaths": 11
+        "deaths": 15
     },
     {
         "player": "Euan",   
         "name": "The Red Prince",   
         "race": "Lizard",
         "spec": ["Tank" ],
-        "deaths": 9
+        "deaths": 10
     },
     {
         "player": "Keith",   
         "name": "Killary Hinton",   
         "race": "Lizard",
         "spec": ["Rogue"],
-        "deaths": 11
+        "deaths": 13
     },
     {
         "player": "Miller",   
         "name": "Wailin' Willy Jenkins",   
         "race": "Undead Lizard",
         "spec": ["Mage"],
-        "deaths": 6
+        "deaths": 7
     }]
 }
