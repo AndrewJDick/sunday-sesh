@@ -15,6 +15,7 @@ const Section = styled.section `
 const DeathTable = styled.table`
 	background-color: rgba(255, 255, 255, .9);
 	border-collapse: collapse;
+	table-layout: fixed;
     width: 100%;
     height: 100%;
 `;	
