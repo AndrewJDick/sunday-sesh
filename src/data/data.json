@@ -3,7 +3,7 @@
         "player": "Andrew",   
         "name": "Fane",   
         "race": "Undead Human",
-        "spec": ["Blood Mage"],
+        "spec": ["Mage"],
         "deaths": 28
     },
     {
@@ -24,7 +24,7 @@
         "player": "Miller",   
         "name": "Wailin' Willy Jenkins",   
         "race": "Undead Lizard",
-        "spec": ["Pyro"],
+        "spec": ["Mage"],
         "deaths": 30
     }]
 }
