@@ -4,27 +4,27 @@
         "name": "Fane",   
         "race": "Undead Human",
         "spec": ["Blood Mage"],
-        "deaths": 24
+        "deaths": 28
     },
     {
         "player": "Euan",   
         "name": "The Red Prince",   
         "race": "Lizard",
         "spec": ["Tank"],
-        "deaths": 19
+        "deaths": 21
     },
     {
         "player": "Keith",
         "name": "Killary Hinton",
         "race": "Lizard",
         "spec": ["Rogue"],
-        "deaths": 18
+        "deaths": 22
     },
     {
         "player": "Miller",   
         "name": "Wailin' Willy Jenkins",   
         "race": "Undead Lizard",
         "spec": ["Pyro"],
-        "deaths": 25
+        "deaths": 30
     }]
 }
